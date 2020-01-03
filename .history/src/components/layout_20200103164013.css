@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c9c9c1;
+  color: #a2405e;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #8c2f49;
+}
+a {
+  color: #8c2f49;
+}
+.body--night-mode {
+  background-color: #222;
+  color: #d9d9d9;
+}
+
+.header {
+
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: auto;
+}
+
+.header__title {
+  display: block;
+}
+
+.tumbler__wrapper {
+  margin: -55px auto 0 auto;
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  border: #1d92b2;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+
+}
+.tumbler__wrapper svg {
+  width: 15px;
+  height: 15px;
+}
+
+.tumbler {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: margin-left 0.5s, background-color 0.5s;
+}
+
+.tumbler--night-mode {
+  margin-left: calc(100% - 30px);
+}
+.sun-svg,
+.moon-svg {
+  display: none;
+}
+.loveSvg svg {
+  display: block;
+  height: 1rem;
+  max-width: 1rem;
+}
